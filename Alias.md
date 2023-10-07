@@ -1,4 +1,12 @@
-# My alias for bash terminal
+# My Alias for bash terminal
+
+## Commands for open alias list in notepad
+
+```shell
+notepad ~/.bashrc
+```
+
+## Alias List
 
 ```shell
 alias ga='git add'
