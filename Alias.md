@@ -39,4 +39,7 @@ alias cl='clear'
 alias gh='history|grep'
 
 alias cg='cd D:/Projects/F1'
+
+alias s='start'
+alias sd='start docker'
 ```
