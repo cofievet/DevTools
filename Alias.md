@@ -36,7 +36,7 @@ alias y='yarn'
 alias c='code .'
 alias cl='clear'
 
-alias gh='history|grep'
+alias hg='history|grep'
 
 alias cg='cd D:/Projects/F1'
 
