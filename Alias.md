@@ -42,4 +42,9 @@ alias cg='cd D:/Projects/F1'
 
 alias s='start'
 alias sd='start docker'
+
+alias dsac='docker stop $(docker ps -a -q)'
+alias drmac='docker rm $(docker ps -a -q)'
+alias drmai='docker rmi $(docker images -q)'
+alias dcud='docker-compose up -d'
 ```
