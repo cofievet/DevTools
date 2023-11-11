@@ -28,7 +28,7 @@ alias gfp='git fetch --prune'
 
 alias gdelall='git branch | grep -v "main" | xargs git branch -D'
 
-alias nrd='npm run dev'
+alias ns='npm run dev'
 
 alias ys='yarn start'
 alias y='yarn'
