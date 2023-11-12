@@ -16,19 +16,23 @@ alias gc='git commit --verbose'
 alias gca='git commit -a --verbose'
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
-alias gpm="git checkout main && git pull"
+alias gl='git log'
+
+alias gp='git push origin -u HEAD'
 
 alias gst='git status'
 alias gco='git checkout'
-alias gcob='git checkout -b'
+__git_complete gco _git_checkout
 
-alias gl='git log'
-alias gp='git push origin -u HEAD'
+alias gcob='git checkout -b'
+__git_complete gcob _git_checkout
+
 alias gfp='git fetch --prune'
 
 alias gdelall='git branch | grep -v "main" | xargs git branch -D'
+alias gpm="git checkout main && git pull"
 
-alias ns='npm run dev'
+alias nrd='npm run dev'
 
 alias ys='yarn start'
 alias y='yarn'
@@ -36,9 +40,12 @@ alias y='yarn'
 alias c='code .'
 alias cl='clear'
 
-alias hg='history|grep'
+alias gh='history|grep'
 
 alias cg='cd D:/Projects/F1'
+
+alias wgua='winget upgrade --all'
+alias tlc='telepresence connect'
 
 alias s='start'
 alias sd='start docker'
