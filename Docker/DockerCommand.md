@@ -5,9 +5,11 @@
 ## Main commands
 
 ```shell
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
-docker rmi $(docker images -q)
+docker image ls #get all the image
+docker container ls # get all the active container
+docker stop $(docker ps -a -q) # Stop all containers
+docker rm $(docker ps -a -q) # Delete all container
+docker rmi $(docker images -q) # Delete all images
 ```
 
 If the build in note in the same folder (parameter -t) and src in context
