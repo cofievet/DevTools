@@ -18,11 +18,17 @@ If the build in note in the same folder (parameter -t) and src in context
 docker build -t statistics-api-image -f build/Dockerfile ./src/
 ```
 
-Call the docker compose file
+Call the docker compose file (if you have only one docker-compose)
 
 ```shell
 docker-compose up -d
 ```
 
+Else you can specify the docker-compose file
+```shell
+docker-compose -f docker-compose.yml up
+```
+
 [docker-compose example](./docker-compose.exemple.yml)\
 In this example, we have the MongoDb and kafka creation (with topic init)
+
