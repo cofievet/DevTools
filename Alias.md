@@ -34,7 +34,6 @@ alias gpm="git checkout main && git pull"
 alias grstc='git reset --soft HEAD~'
 
 alias grstallc='git reset --hard'
-
 alias nrd='npm run dev'
 
 alias ys='yarn start'
