@@ -15,7 +15,7 @@ alias gap='git add --patch'
 alias gc='git commit --verbose'
 alias gca='git commit -a --verbose'
 alias gcm='git commit -m'
-alias gcam='git commit -a -m'
+alias gcam='git add . && git commit -a -m'
 alias gl='git log'
 
 alias gp='git push origin -u HEAD'
@@ -25,12 +25,15 @@ alias gco='git checkout'
 __git_complete gco _git_checkout
 
 alias gcob='git checkout -b'
-__git_complete gcob _git_checkout
 
 alias gfp='git fetch --prune'
 
-alias gdelall='git branch | grep -v "main" | xargs git branch -D'
+alias gdelall='git fetch --prune && git branch | grep -v "main" | xargs git branch -D'
 alias gpm="git checkout main && git pull"
+
+alias grstc='git reset --soft HEAD~'
+
+alias grstallc='git reset --hard'
 
 alias nrd='npm run dev'
 
@@ -54,4 +57,5 @@ alias dsac='docker stop $(docker ps -a -q)'
 alias drmac='docker rm $(docker ps -a -q)'
 alias drmai='docker rmi $(docker images -q)'
 alias dcud='docker-compose up -d'
+
 ```
