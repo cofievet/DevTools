@@ -7,6 +7,7 @@
 ```shell
 docker image ls #get all the image
 docker container ls # get all the active container
+docker ps #get container active
 docker stop $(docker ps -a -q) # Stop all containers
 docker rm $(docker ps -a -q) # Delete all container
 docker rmi $(docker images -q) # Delete all images
@@ -32,3 +33,7 @@ docker-compose -f docker-compose.yml up
 [docker-compose example](./docker-compose.exemple.yml)\
 In this example, we have the MongoDb and kafka creation (with topic init)
 
+Get container IP
+```shell
+ docker inspect \ -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_id
+```
