@@ -31,9 +31,8 @@ alias gfp='git fetch --prune'
 alias gdelall='git fetch --prune && git branch | grep -v "main" | xargs git branch -D'
 alias gpm="git checkout main && git pull"
 
-alias grstc='git reset --soft HEAD~'
+alias grsth='git reset HEAD~'
 
-alias grstallc='git reset --hard'
 alias nrd='npm run dev'
 
 alias ys='yarn start'
