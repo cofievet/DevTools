@@ -36,6 +36,12 @@ nats stream info <stream-name>
 nats stream view messages
 ```
 
+### Published message in subject
+
+```shell
+nats pub <subject> "hello"
+```
+
 ### Delete stream
 
 ```shell
