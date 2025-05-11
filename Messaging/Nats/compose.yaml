@@ -1,0 +1,21 @@
+version: "2"
+services:
+  nats:
+    image: nats:latest
+    container_name: nats-server
+    ports:
+      - "4222:4222" # Port client principal
+      - "8222:8222" # Port HTTP de monitoring
+      - "6222:6222" # Port de clustering
+    command:
+      - "--jetstream"
+      - "--http_port=8222"
+      - "--debug" # Active les logs de débogage
+      - "--trace" # Active les logs de trace
+      - "--addr=0.0.0.0" # Écoute sur toutes les interfaces
+    networks:
+      - nats-network
+    # Pour s'assurer que NATS est accessible depuis l'hôte
+networks:
+  nats-network:
+    driver: bridge
