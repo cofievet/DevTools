@@ -2,9 +2,12 @@
 
 ## IDE
 
-### Commit message
+### Commit message generation
 
-The first line should be a resume of all files with start by this possibility : (feat: / fix: / refactor: / chore: / doc:) and a scope between parenthesis, no more than 50 characteres expect the start.
-The second line should be blank
-The third line is a breaking change if needeed , else we doesn't set this line.
-The other line is a description more precise functionnaly in bullet point. I don't want the class name or the code return
+The first line should be a summary of all modifications, following the format <type>(scope): <description>. The description should not exceed 50 characters (excluding type and scope).
+
+The second line should be blank.
+
+The third line should contain breaking changes if needed, otherwise this line should be omitted.
+
+The remaining lines should provide a more detailed functional description in bullet points. Do not include class names or code return values.
