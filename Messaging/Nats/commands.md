@@ -6,13 +6,19 @@ This command need the [NatsCLI tools](https://github.com/nats-io/natscli?tab=rea
 
 ## Commands
 
-### Connect to NATS serveur
+### Connect to NATS serveur with user
 
 ```shell
 nats context add secured \
   --server nats://localhost:4222 \
   --user monuser \
   --password monmotdepasse
+```
+
+### Connect with credentials
+
+```shell
+nats --creds ../../Users/cofie/Downloads/corentin.fievet.staging.creds consumer ls --server=nats://nats.mnq.fr-par.scaleway.com:4222
 ```
 
 ### Get the stream list
