@@ -6,6 +6,15 @@ This command need the [NatsCLI tools](https://github.com/nats-io/natscli?tab=rea
 
 ## Commands
 
+### Connect to NATS serveur
+
+```shell
+nats context add secured \
+  --server nats://localhost:4222 \
+  --user monuser \
+  --password monmotdepasse
+```
+
 ### Get the stream list
 
 ```shell
