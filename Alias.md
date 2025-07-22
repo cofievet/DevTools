@@ -9,28 +9,24 @@ notepad ~/.bashrc
 ## Alias List
 
 ```shell
-alias ga='git add'
-alias gaa='git add .'
+alias ga='git add .'
 alias gap='git add --patch'
-alias gc='git commit --verbose'
-alias gca='git commit -a --verbose'
 alias gcm='git commit -m'
-alias gcam='git add . && git commit -a -m'
-alias gl='git log'
+alias gc='git checkout'
+alias gcb='git checkout'
+alias gcob='git checkout -b'
+alias gs='git status'
+alias gps='git push origin -u HEAD'
+alias gp='git pull'
 
-alias gp='git push origin -u HEAD'
+alias gpm="git checkout master && git pull"
+alias gpv1="git checkout releases/v1 && git pull"
+alias gdelall='git branch | grep -v "master" | grep -v "releases/v1" | xargs git branch -D'
 
-alias gst='git status'
-alias gco='git checkout'
 __git_complete gco _git_checkout
 
-alias gcob='git checkout -b'
-
+alias gl='git log'
 alias gfp='git fetch --prune'
-
-alias gdelall='git fetch --prune && git branch | grep -v "main" | xargs git branch -D'
-alias gpm="git checkout main && git pull"
-
 alias grsth='git reset HEAD~'
 
 alias nrd='npm run dev'
